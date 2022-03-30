@@ -1,0 +1,33 @@
+asar: false
+productName: ReliableWebhook
+executableName: reliablewebhook
+appId: com.electron.reliablewebhook
+mac:
+  icon: ./icon.icns
+  category: com.electron.reliablewebhook
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+win:
+  icon: ./icon.ico
+  target:
+    - target: portable
+      arch:
+        - x64
+linux:
+  target:
+    - target: appimage
+      arch:
+        - x64
+  icon: ./dist/assets/android-chrome-256x256.png
+  category: utility
+
+files:
+  - "./electron/dist"
+  - "./main.js"
+  - "!node_modules"
+
+directories:
+  output: "electron"

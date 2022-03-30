@@ -1,0 +1,36 @@
+{
+  "name": "reliable-webhook",
+  "description": "Webhook relay to localhost and production",
+  "version": "0.0.1",
+  "publisher": "reliable-webhook",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reliable-webhook/reliable-webhook"
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:reliableWebhook.start",
+    "onWebviewPanel:reliableWebhook"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reliableWebhook.start",
+        "title": "Open Reliable Webhooks",
+        "category": "Reliable Webhook"
+      }
+    ]
+  },
+  "scripts": {},
+  "dependencies": {
+    "axios": "^0.24.0",
+    "vscode": "^1.1.37"
+  }
+}
