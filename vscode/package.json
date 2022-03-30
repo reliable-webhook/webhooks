@@ -1,0 +1,38 @@
+{
+  "name": "ReliableWebhook",
+  "displayName": "Reliable Webhook",
+  "description": "Webhooks development relay to localhost",
+  "version": "1.0.3",
+  "license": "MIT",
+  "publisher": "ReliableWebhook",
+  "private": true,
+  "icon": "media/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reliable-webhook/webhooks"
+  },
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "categories": [
+    "Debuggers"
+  ],
+  "activationEvents": [
+    "onCommand:reliableWebhook.start",
+    "onWebviewPanel:reliableWebhook"
+  ],
+  "main": "extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reliableWebhook.start",
+        "title": "Open",
+        "category": "Reliable Webhook"
+      }
+    ]
+  },
+  "scripts": {},
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

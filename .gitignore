@@ -1,0 +1,11 @@
+node_modules
+yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+dist
+electron
+vscode/media
+vscode/dist
+.vscode/**
+vscode/*.vsix
+.DS_Store
