@@ -1,6 +1,8 @@
 # Reliable Webhook
 
-Develop and debug webhook integrations with an easy-to-use GUI app. Relay requests to localhost, inspect data, and retry failed attempts.
+Develop and debug webhook integrations with an easy-to-use UI. Relay requests to localhost, inspect data, and retry failed attempts.
+
+![start](https://user-images.githubusercontent.com/5418788/162236489-f67502a4-4e1b-41e2-bf2e-38769d98af46.gif)
 
 ## Installation
 

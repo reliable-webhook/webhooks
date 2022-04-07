@@ -2,7 +2,7 @@
   "name": "ReliableWebhook",
   "displayName": "Reliable Webhook",
   "description": "Webhooks development relay to localhost",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "publisher": "ReliableWebhook",
   "private": true,

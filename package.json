@@ -1,6 +1,6 @@
 {
   "name": "reliable-webhook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "main.js",
   "license": "MIT",
   "dependencies": {
@@ -28,6 +28,10 @@
     "stylelint": "./node_modules/stylelint/bin/stylelint.js \"src/**/*.{scss,css}\" --fix"
   },
   "devDependencies": {
+    "@babel/core": "7",
+    "@babel/plugin-transform-runtime": "7",
+    "@babel/preset-env": "7",
+    "@babel/runtime": "7",
     "@vue/compiler-sfc": "^3.2.22",
     "autoprefixer": "^10.4.2",
     "babel-eslint": "^10.1.0",
@@ -55,6 +59,8 @@
     "postcss": "^8.4.5",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-import": "^14.0.2",
     "sass-loader": "^12.1.0",
     "stylelint": "^13.8.0",
     "stylelint-config-sass-guidelines": "^8.0.0",
