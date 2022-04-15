@@ -32,13 +32,13 @@
             leave-to="opacity-0 scale-95"
           >
             <div
-              class="inline-block w-full p-6 my-24 text-left align-middle transition-all transform bg-white border border-gray-200"
+              class="inline-block w-full p-6 my-24 text-left align-middle transition-all transform bg-white dark:bg-dark-800 border border-gray-200 dark:border-dark-600"
               :class="sizeClasses[size]"
             >
               <DialogTitle
                 v-if="title"
                 as="h3"
-                class="mb-6 text-2xl font-light leading-6 text-gray-900"
+                class="mb-6 text-2xl font-light leading-6 text-gray-900 dark:text-dark-50"
               >
                 {{ title }}
               </DialogTitle>
@@ -52,7 +52,7 @@
                 <UIButton
                   v-if="withCancel"
                   size="small"
-                  class="w-1/2 md:w-1/3 lg:w-1/4 dark:bg-white dark:text-gray-900"
+                  class="w-1/2 md:w-1/3 lg:w-1/4"
                   color-type="white"
                   @click="onCancel"
                 >

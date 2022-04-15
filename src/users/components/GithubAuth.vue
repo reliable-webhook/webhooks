@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="text-center text-gray-700">
-      <div>
+    <div class="text-center">
+      <p class="text-gray-900 dark:text-dark-50">
         Open GitHub Auth and enter the code:
-      </div>
-      <div class="m-6">
+      </p>
+      <div class="m-8 text-gray-700 dark:text-dark-50">
         <code
           class="text-2xl cursor-pointer rounded p-3 border"
           @click="copy"
@@ -17,7 +17,7 @@
     >
       Open GitHub Auth
     </UIButton>
-    <div class="text-sm text-gray-700">
+    <div class="text-sm text-gray-700 dark:text-dark-50">
       * You might need to wait up to 5 seconds after the code was submitted on GitHub.
     </div>
   </div>

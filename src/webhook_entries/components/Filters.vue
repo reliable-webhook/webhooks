@@ -4,60 +4,17 @@
     class="flex items-center sm:pl-6 pr-2 space-x-1"
   >
     <button
-      class="p-2 text-sm hover:bg-gray-200 dark:hover:bg-dark-700 dark:text-dark-50"
+      class="p-2 text-sm text-gray-700 dark:text-dark-50 hover:bg-gray-200 dark:hover:bg-dark-700 "
       @click="$emit('live-update-toggle')"
     >
-      <svg
+      <PlayerPauseIcon
         v-if="isLiveUpdate"
-        xmlns="http://www.w3.org/2000/svg"
         class="w-5 h-5"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path
-          stroke="none"
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <rect
-          x="6"
-          y="5"
-          width="4"
-          height="14"
-          rx="1"
-        />
-        <rect
-          x="14"
-          y="5"
-          width="4"
-          height="14"
-          rx="1"
-        />
-      </svg>
-      <svg
+      />
+      <PlayerPlayIcon
         v-else
-        xmlns="http://www.w3.org/2000/svg"
         class="w-5 h-5"
-        width="44"
-        height="44"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      >
-        <path
-          stroke="none"
-          d="M0 0h24v24H0z"
-          fill="none"
-        />
-        <path d="M7 4v16l13 -8z" />
-      </svg>
+      />
     </button>
     <UuidFilterInput
       v-model="searchText"
@@ -78,6 +35,7 @@
 import UuidFilterInput from './UuidInput'
 import StatusesFilterSelect from './StatusSelect'
 import TimeFilterSelect from './TimeSelect'
+import { PlayerPlayIcon, PlayerPauseIcon } from 'icons'
 
 const initialData = {
   searchText: '',
@@ -90,7 +48,9 @@ export default ({
   components: {
     UuidFilterInput,
     StatusesFilterSelect,
-    TimeFilterSelect
+    TimeFilterSelect,
+    PlayerPlayIcon,
+    PlayerPauseIcon
   },
   props: {
     isLiveUpdate: {

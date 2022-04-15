@@ -24,7 +24,12 @@ import SendIcon from './components/SendIcon'
 import TwitterIcon from './components/TwitterIcon'
 import GithubIcon from './components/GithubIcon'
 import EmailIcon from './components/EmailIcon'
-
+import PuzzleIcon from './components/PuzzleIcon'
+import DeviceDesktopIcon from './components/DeviceDesktopIcon'
+import SunIcon from './components/SunIcon'
+import MoonIcon from './components/MoonIcon'
+import PlayerPauseIcon from './components/PlayerPauseIcon'
+import PlayerPlayIcon from './components/PlayerPlayIcon'
 export {
   MenuIcon,
   XIcon,
@@ -51,5 +56,11 @@ export {
   TwitterIcon,
   SendIcon,
   GithubIcon,
-  EmailIcon
+  EmailIcon,
+  PuzzleIcon,
+  DeviceDesktopIcon,
+  SunIcon,
+  MoonIcon,
+  PlayerPauseIcon,
+  PlayerPlayIcon
 }

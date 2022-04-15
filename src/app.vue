@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="dark:bg-dark-800 bg-white h-screen overflow-hidden">
+    <div class="bg-white dark:bg-dark-800 h-screen overflow-hidden">
       <Navbar />
       <RouterView v-if="isLoaded" />
       <ModalsContainer />

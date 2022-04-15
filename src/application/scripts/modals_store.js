@@ -3,7 +3,8 @@ import { reactive } from 'vue'
 const modalProperties = reactive({
   SignUpModal: { visible: false, note: null },
   InviteModal: { visible: false, note: null },
-  CharityModal: { visible: false, note: null }
+  CharityModal: { visible: false, note: null },
+  CorsWarningModal: { visible: false, note: null }
 })
 
 function showModal (modalName, note) {

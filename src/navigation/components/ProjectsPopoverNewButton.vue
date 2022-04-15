@@ -10,8 +10,8 @@
           name="name"
           type="text"
           placeholder="Type here your project name"
-          :class="formattedProjectNameErrors ? 'text-red-500' : 'text-gray-700'"
-          class="flex-1 appearance-none w-full py-3 px-3 text-base focus:outline-none dark:bg-dark-800 dark:text-dark-50"
+          :class="formattedProjectNameErrors ? 'text-red-500' : 'text-gray-700 dark:text-dark-50'"
+          class="flex-1 appearance-none w-full py-3 px-3 text-base focus:outline-none bg-white dark:bg-dark-800 "
           @input="onInputName"
           @keyup.enter="createProject"
         >
@@ -23,7 +23,7 @@
         </p>
       </div>
       <div
-        class="flex-none p-2 text-gray-500 hover:text-gray-900 hover:cursor-pointer dark:text-dark-50 dark:hover:text-white"
+        class="flex-none p-2 text-gray-500 dark:text-dark-50 hover:text-gray-900 dark:hover:text-white hover:cursor-pointer"
         @click="createProject"
       >
         <CheckIcon class="w-6 h-6" />

@@ -4,7 +4,7 @@
       <label
         v-if="label?.length"
         for="name"
-        class="mb-2 block text-md font-normal text-gray-700"
+        class="mb-2 block text-md font-normal text-gray-700 dark:text-dark-50"
       >
         <span
           v-if="required"
@@ -20,8 +20,8 @@
         :name="name"
         :placeholder="placeholder"
         :required="required ? 'required' : ''"
-        :class="error ? 'border-red-500' : 'border-gray-300'"
-        class="flex-1 appearance-none w-full py-2 px-3 bg-white text-gray-900 placeholder-gray-400 dark:placeholder-dark-500 text-sm focus:outline-none focus:border-gray-900 border"
+        :class="error ? 'border-red-500' : 'border-gray-300 dark:border-gray-600'"
+        class="flex-1 appearance-none w-full py-2 px-3 bg-white dark:bg-dark-700 text-gray-900 dark:text-dark-50 placeholder-gray-400 dark:placeholder-dark-200 text-sm focus:outline-none focus:border-gray-900 border"
         @input="handleInput"
       >
       <p

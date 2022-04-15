@@ -2,14 +2,14 @@
   <div class="flex items-center py-2 px-3 space-x-1">
     <SearchIcon
       v-if="focused"
-      class="w-4 h-4 dark:bg-dark-800 dark:text-dark-50"
+      class="w-4 h-4 text-gray-700 dark:text-dark-50"
     />
 
     <input
       ref="inputRef"
       :value="modelValue"
       placeholder="Filter by uuid"
-      class="flex-1 appearance-none w-full text-gray-900 placeholder-gray-400 dark:placeholder-dark-500 text-sm focus:outline-none dark:bg-dark-800 dark:text-dark-50"
+      class="flex-1 appearance-none w-full bg-white dark:bg-dark-800 text-gray-900 dark:text-dark-50 placeholder-gray-400 dark:placeholder-dark-200 text-sm focus:outline-none "
       @focus="focused = true"
       @blur="focused = false"
       @change="handleInput"

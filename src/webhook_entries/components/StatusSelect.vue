@@ -6,7 +6,7 @@
   >
     <PopoverButton
       ref="popoverButtonRef"
-      class="inline-flex items-center space-x-1 px-2 whitespace-nowrap text-sm font-light text-gray-700 bg-gray-200 rounded-sm group hover:text-opacity-100 focus:outline-none dark:bg-dark-700 dark:text-dark-50"
+      class="inline-flex items-center space-x-1 px-2 whitespace-nowrap text-sm font-light text-gray-700 dark:text-dark-50 bg-gray-200 dark:bg-dark-700 rounded-sm group hover:text-opacity-100 focus:outline-none"
     >
       <span>{{ seletectOptionName }}</span>
       <ChevronDownIcon
@@ -27,19 +27,19 @@
       leave-from-class="translate-y-0 opacity-100"
       leave-to-class="translate-y-1 opacity-0"
     >
-      <PopoverPanel class="absolute z-10 w-auto bg-white right-0 mt-2 transform">
-        <div class="overflow-hidden border border-gray-100 rounded-sm hover:border-gray-200 transition duration-150 ease-in-out">
-          <div class="p-3 border-b border-gray-100 space-y-3">
+      <PopoverPanel class="absolute z-10 w-auto bg-white dark:bg-dark-800 right-0 mt-2 transform">
+        <div class="overflow-hidden border border-gray-100 dark:border-dark-600 rounded-sm hover:border-gray-200 dark:hover:border-dark-700 transition duration-150 ease-in-out">
+          <div class="p-3 space-y-3">
             <label
               v-for="statusOption in statusOptions"
               :key="statusOption.value"
-              class="flex items-center space-x-2 text-gray-600 cursor-pointer"
+              class="flex items-center space-x-2 text-gray-600 dark:text-dark-50 cursor-pointer"
             >
               <input
                 v-model="checkedStatuses"
                 type="checkbox"
                 :value="statusOption.value"
-                class="form-tick appearance-none bg-white bg-check h-4 w-4 border border-gray-300 rounded-sm checked:bg-gray-600 checked:border-transparent focus:outline-none"
+                class="form-tick appearance-none bg-white bg-check h-4 w-4 border border-gray-300 dark:border-dark-600 rounded-sm checked:bg-gray-600 dark:checked:bg-dark-600 checked:border-transparent focus:outline-none"
               >
               <span class="font-normal">
                 {{ statusOption.name }}
@@ -57,7 +57,6 @@
               <UIButton
                 color-type="gray"
                 size="small"
-                class="dark:bg-white dark:text-gray-900"
                 @click="[handleReset(), close()]"
               >
                 Clear

@@ -8,17 +8,21 @@
     <div class="text-4xl text-center mb-2">
       🇺🇦
     </div>
-    ReliableWebhook is a <b>charityware</b>. If you find it useful, you can make a donation to help Ukraine through the <a
-      href="https://www.comebackalive.in.ua/donate"
-      class="focus:outline-none underline"
-      target="_blank"
-    >Come Back Alive</a> charity fund.
+    <p class="text-gray-900 dark:text-dark-50">
+      ReliableWebhook is a <b>charityware</b>. If you find it useful, you can make a donation to help Ukraine through the
+      <a
+        href="https://www.comebackalive.in.ua/donate"
+        class="focus:outline-none underline"
+        target="_blank"
+      >Come Back Alive</a> charity fund.
+    </p>
+
     <form
       @submit.prevent="onSubmit"
       @keyup.enter="onSubmit"
     >
       <div class="flex items-center my-4 justify-center">
-        <span class="mr-2">$</span>
+        <span class="mr-2 text-gray-900 dark:text-dark-50">$</span>
         <UIInput
           :model-value="amount"
           class="w-12 mr-5"
@@ -35,7 +39,7 @@
     <div class="text-center">
       <a
         href="#"
-        class="text-sm underline"
+        class="text-sm underline text-gray-900 dark:text-dark-50"
         @click.prevent="onCancel"
       >Not now</a>
     </div>

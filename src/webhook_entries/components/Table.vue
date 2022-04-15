@@ -37,7 +37,7 @@
       <tr
         v-if="loading"
         :class="loading ? 'text-gray-300' : 'text-gray-500'"
-        class="p-2 flex items-center justify-center text-gray-500 font-medium hover:bg-gray-100 focus:bg-gray-100 hover:text-gray-700 focus:text-gray-700 cursor-pointer"
+        class="p-2 flex items-center justify-center font-medium hover:bg-gray-100 focus:bg-gray-100 hover:text-gray-700 focus:text-gray-700 cursor-pointer"
         @click="handleLoadMore"
       >
         <SpinnerIcon

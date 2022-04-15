@@ -12,7 +12,7 @@
     </div>
     <div
       ref="entriesContainerRefRef"
-      class="flex border-t h-full dark:border-dark-600"
+      class="flex h-full border-t dark:border-dark-600"
     >
       <div
         class="h-full"
@@ -60,7 +60,7 @@
       </div>
       <div
         v-if="selectedEntry"
-        class="border-l w-1/2 h-full dark:border-dark-600"
+        class="w-1/2 h-full border-l dark:border-dark-600"
         :style="{ height: `calc(100vh - ${heightOffset}px)`}"
       >
         <WebhookEntryDetail

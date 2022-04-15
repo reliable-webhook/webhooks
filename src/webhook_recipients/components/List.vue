@@ -1,6 +1,6 @@
 <template>
   <div class="mb-4 md:mb-0">
-    <div class="font-semibold text-gray-500 mb-2 dark:text-dark-50">
+    <div class="mb-2 font-semibold text-gray-500 dark:text-dark-50">
       Destination URLs
     </div>
     <div

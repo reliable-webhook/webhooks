@@ -8,14 +8,14 @@
   >
     <template v-if="!authType">
       <UIButton
-        class="dark:bg-white dark:text-gray-900 block w-full"
+        class="block w-full"
         icon="EmailIcon"
         @click="authType = 'email'"
       >
         Email/Password
       </UIButton>
       <UIButton
-        class="dark:bg-white dark:text-gray-900 block w-full mt-3"
+        class="block w-full mt-3"
         icon="GithubIcon"
         @click="authType = 'github'"
       >
@@ -46,7 +46,7 @@
       <div class="flex justify-end space-x-4">
         <UIButton
           size="small"
-          class="w-1/2 md:w-1/3 lg:w-1/4 dark:bg-white dark:text-gray-900"
+          class="w-1/2 md:w-1/3 lg:w-1/4"
           color-type="white"
           type="button"
           @click="onCancel"

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group w-full p-2 rounded-sm  bg-gray-100 dark:bg-dark-700 text-gray-700 dark:text-dark-50 hover:cursor-pointer"
+    class="group w-full p-2 rounded-sm bg-gray-100 dark:bg-dark-700 text-gray-700 dark:text-dark-50 hover:cursor-pointer"
     :class="{ 'hover:bg-gray-200': !visibleRecipientUrlInput }"
   >
     <div class="relative flex items-center justify-between">
@@ -18,7 +18,7 @@
           v-model="recipientUrl"
           type="text"
           placeholder="http://localhost:3000/webhook"
-          class="bg-gray-100 appearance-none w-full text-sm font-light text-gray-700  dark:placeholder-dark-500 focus:outline-none dark:bg-dark-700 dark:text-dark-50"
+          class="bg-gray-100 dark:bg-dark-700 appearance-none w-full text-sm font-light text-gray-700 dark:text-dark-50 placeholder-gray-400 dark:placeholder-dark-200 focus:outline-none"
           @keyup.enter="saveRecipient"
         >
         <span

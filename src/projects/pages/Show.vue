@@ -33,7 +33,7 @@
           class="relative flex width-fit place-content-center -bottom-8"
         >
           <span
-            class="px-2 text-xs font-light text-gray-700 bg-gray-300 dark:bg-dark-600 dark:text-dark-50 rounded-b-md hover:bg-gray-400 hover:text-gray-200  cursor-pointer"
+            class="px-2 text-xs font-light bg-gray-300 dark:bg-dark-600 text-gray-700 dark:text-dark-50 rounded-b-md hover:bg-gray-400 dark:hover:bg-dark-500 hover:text-gray-200 dark:hover:text-white cursor-pointer"
             @click="showAllConsumersAndRecipients"
           >
             {{ visibleAllConsumersAndRecipients ? 'Collapse' : 'Show All' }}

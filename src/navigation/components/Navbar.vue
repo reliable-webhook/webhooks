@@ -2,7 +2,7 @@
   <Disclosure
     v-if="currentUser.id"
     as="nav"
-    class="text-gray-700 bg-gray-50 border-b border-gray-100 dark:border-dark-600 py-1 dark:bg-dark-800 dark:text-dark-50"
+    class="bg-gray-50 dark:bg-dark-800 text-gray-700 dark:text-dark-50 border-gray-100 dark:border-dark-600 border-b py-1"
   >
     <div class="px-2 sm:px-6">
       <div class="relative flex items-center justify-between h-10">

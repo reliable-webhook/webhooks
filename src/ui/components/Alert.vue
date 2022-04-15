@@ -45,8 +45,8 @@ export default {
     typeClasses () {
       const typeClasses = {
         success: 'bg-green-100 dark:bg-green-900',
-        info: 'bg-blue-100 dark:bg-green-900',
-        error: 'bg-red-100 dark:bg-green-900'
+        info: 'bg-blue-100 dark:bg-blue-900',
+        error: 'bg-red-100 dark:bg-red-900'
       }
 
       return typeClasses[this.$props.type] || typeClasses.info

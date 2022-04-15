@@ -77,10 +77,10 @@ export default {
   computed: {
     colorClasses () {
       const colorClasses = {
-        white: 'bg-white text-grey-900 hover:bg-gray-100 border-gray-500 dark:border-dark-600 dark:text-dark-50 dark:bg-dark-600 dark:hover:bg-dark-700 dark:hover:text-gray-200',
-        black: 'bg-gray-700 text-white border-gray-700 hover:bg-black hover:border-black dark:hover:bg-dark-700 dark:hover:border-dark-700',
-        red: 'bg-red-500 text-white hover:bg-red-700 border-red-500 dark:bg-red-800 dark:border-red-800 dark:hover:bg-red-700 dark:hover:border-red-700 dark:hover:text-white',
-        gray: 'bg-white text-gray-500 hover:bg-gray-100 border-gray-300 dark:border-dark-600 dark:text-dark-50 dark:bg-dark-600 dark:hover:bg-dark-700 dark:hover:text-gray-100'
+        white: 'bg-white dark:bg-dark-600 text-grey-900 dark:text-dark-50 hover:bg-gray-100 dark:hover:bg-dark-700 border-gray-500 dark:border-dark-600 dark:hover:text-gray-200',
+        black: 'bg-gray-700 text-white border-gray-700 hover:bg-black dark:hover:bg-dark-700 hover:border-black dark:hover:border-dark-700',
+        red: 'bg-red-500 dark:bg-red-800 text-white hover:bg-red-700 dark:hover:bg-red-700 border-red-500 dark:border-red-800 hover:border-red-700 dark:hover:border-red-700 dark:hover:text-white',
+        gray: 'bg-white dark:bg-dark-600 text-gray-500 dark:text-dark-50 hover:bg-gray-100 dark:hover:bg-dark-700 border-gray-300 dark:border-dark-600 dark:hover:text-gray-100'
       }
 
       return colorClasses[this.$props.colorType] || colorClasses.white

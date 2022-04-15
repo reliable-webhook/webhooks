@@ -2,7 +2,7 @@
   <div class="inline-flex items-center">
     <Switch
       v-model="enabled"
-      :class="enabled ? 'bg-gray-400 dark:bg-dark-800' : 'bg-white border-gray-200 dark:bg-dark-500'"
+      :class="enabled ? 'bg-gray-400 dark:bg-dark-800' : 'bg-white dark:bg-dark-500 border-gray-200'"
       class="relative inline-flex items-center h-6 w-12 border dark:border-0 rounded-full"
       @click="toggle"
     >
