@@ -31,7 +31,12 @@ function getWebviewOptions (extensionUri) {
 }
 
 function localRequest ({ recipient, entry, data }) {
-  const url = recipient.url
+  let url = recipient.url
+
+  if (entry.url.includes('?')) {
+    url = [url, entry.url.split('?')[1]].join('?')
+  }
+
   const method = recipient.method.toLowerCase()
   const headers = Object.entries(entry.headers).reduce((acc, [key, value]) => {
     if (!key.match(UNSAFE_HEADERS_REGEXP)) {

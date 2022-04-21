@@ -10,11 +10,11 @@ function localRequest (entry, recipient, data) {
 
     return new Promise(() => {})
   } else {
-    return sendXhrRequest(recipient.method, recipient.url, entry.headers, data)
+    return sendXhrRequest(recipient.method, recipient.url, entry, data)
   }
 }
 
-function sendXhrRequest (method, url, headers, data) {
+function sendXhrRequest (method, url, entry, data) {
   let requestUrl = url
   let params = ''
 
@@ -26,6 +26,10 @@ function sendXhrRequest (method, url, headers, data) {
 
   if (method === 'GET') {
     requestUrl = [requestUrl, qs.stringify(typeof params === 'string' ? { data: params } : params)].join('?')
+  }
+
+  if (entry.url.includes('?')) {
+    requestUrl = [requestUrl, entry.url.split('?')[1]].join('?')
   }
 
   return new Promise((resolve, reject) => {
@@ -46,7 +50,7 @@ function sendXhrRequest (method, url, headers, data) {
     }
 
     if (process.env.ELECTRON) {
-      Object.entries(headers).forEach(([key, value]) => {
+      Object.entries(entry.headers).forEach(([key, value]) => {
         if (!key.match(UNSAFE_HEADERS_REGEXP)) {
           xhr.setRequestHeader(key, value)
         }
@@ -58,7 +62,7 @@ function sendXhrRequest (method, url, headers, data) {
     if (method === 'GET') {
       xhr.send()
     } else {
-      xhr.send(data)
+      xhr.send(data === 'empty' ? '' : data)
     }
   })
 }
@@ -66,7 +70,7 @@ function sendXhrRequest (method, url, headers, data) {
 function sendVsCodeRequest (entry, recipient, data) {
   vscode.postMessage({
     command: 'request',
-    options: JSON.parse(JSON.stringify({ entry, recipient, data }))
+    options: JSON.parse(JSON.stringify({ entry, recipient, data: (data === 'empty' ? '' : data) }))
   })
 }
 
